@@ -1,9 +1,11 @@
 package com.example.FirstSpringWebApplication1;
 
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@ComponentScan(basePackages = {"com.example.FirstSpringWebApplication1"})
 public class PageController {
   
 	@RequestMapping("web")
